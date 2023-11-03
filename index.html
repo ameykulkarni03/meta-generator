@@ -1,0 +1,49 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Meta Tag Generator</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <h1>Meta Tag Generator</h1>
+  <form id="meta-tag-form">
+    <div>
+      <label for="title">Title:</label>
+      <input type="text" id="title" placeholder="Enter the page title">
+    </div>
+    <div>
+      <label for="description">Description:</label>
+      <input type="text" id="description" placeholder="Enter the page description">
+    </div>
+    <div>
+      <label for="keywords">Keywords:</label>
+      <input type="text" id="keywords" placeholder="Enter keywords (comma-separated)">
+    </div>
+    <div>
+      <label for="index">Index:</label>
+      <select id="index">
+        <option value="index">Index</option>
+        <option value="noindex">Noindex</option>
+      </select>
+    </div>
+    <div>
+      <label for="follow">Follow:</label>
+      <select id="follow">
+        <option value="follow">Follow</option>
+        <option value="nofollow">Nofollow</option>
+      </select>
+    </div>
+    <button type="button" onclick="generateMetaTags()">Generate Meta Tags</button>
+  </form>
+  <div id="meta-tag-output">
+    <h2>Generated Meta Tags:</h2>
+    <p id="metaTitle"></p>
+    <p id="metaDescription"></p>
+    <p id="metaKeywords"></p>
+    <p id="metaIndex"></p>
+    <p id="metaFollow"></p>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
